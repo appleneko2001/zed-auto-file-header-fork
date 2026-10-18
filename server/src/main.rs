@@ -117,8 +117,8 @@ impl HeaderProfile {
                 Self::line("", "#", "\n")
             }
 
-            // HTML/XML
-            "html" | "htm" | "xml" | "svg" | "xhtml" => Self::html(),
+            // HTML/XML, Markdown
+            "html" | "htm" | "xml" | "svg" | "xhtml" | "md" | "markdown" => Self::html(),
 
             // SQL
             "sql" => Self::line("", "--", "\n"),
